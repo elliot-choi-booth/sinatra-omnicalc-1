@@ -1,0 +1,35 @@
+<h1>Results of square calculation</h1>
+
+<d1>
+  <dt>
+    APR
+  </dt>
+  <dd>
+    <%= params.fetch("apr_input").to_f  =%>%
+  </dd>
+
+  <dt>
+    Number of years
+  </dt>
+  <dd>
+    <%= params.fetch("years_input") =%>
+  </dd>
+
+  <dt>
+    Principal
+  </dt>
+  <dd>
+    <%= @principal =%>
+  </dd>
+
+  <dt>
+    Payment
+  </dt>
+  <dd>
+    <%= @result =%>
+  </dd>
+</d1>
+
+<a href="/payment/new">
+  Calculate another payment
+</a>
